@@ -8,6 +8,7 @@
         <style>
             html, body {
                 height: 100%;
+                background-color: #2ca02c;
             }
 
             body {
