@@ -13,7 +13,8 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
     </head>
     <body>
@@ -59,7 +60,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="well">
-                    <button type="button" class="btn btn-danger">Knap 1</button>
+                    <button type="button" class="btn btn-danger" style="width:50%">Knap 1</button>
                 </div>
             </div>
             <div class="col-md-3">
@@ -71,6 +72,7 @@
             <div class="col-md-3">
                <div class="well">
                    <button type="button" class="btn btn-warning">Knap 4</button>
+
                </div>
             </div>
         </div>
@@ -84,7 +86,21 @@
             </div>
         </div>
 
+        <div class="row">
 
+            <div class="col-md-4">
+                <div class="well">test</div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">test</div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">test</div>
+            </div>
+
+        </div>
     </div>
 
 
@@ -100,7 +116,11 @@
         });
 
 
+        $(function() {
+            $( ".well" ).draggable();
 
+            $( ".well" ).resizable();
+        });
 
 
 
